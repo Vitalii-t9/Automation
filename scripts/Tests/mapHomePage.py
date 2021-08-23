@@ -11,7 +11,7 @@ class MapHomePage(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Chrome(executable_path="C:/Users/vitalii.titov/PycharmProjects/automationtests/drivers/chromedriver.exe")
+        cls.driver = webdriver.Chrome(executable_path="../../drivers/chromedriver.exe") # pathfile = os.path.abspath(__file__) ; os.path.join(__filepath__, "../../driver/webdriver/chromederiver")
         cls.driver.implicitly_wait(10)
         # cls.driver.maximize_window()
 

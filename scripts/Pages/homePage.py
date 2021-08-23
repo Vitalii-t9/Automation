@@ -1,4 +1,4 @@
-from scripts.Locators.locators import Locators
+from scripts.Locators.homePage import HomePageLocators
 from selenium import webdriver
 
 class HomePage():
@@ -6,26 +6,26 @@ class HomePage():
     def __init__(self, driver):
         self.driver = driver
 
-        self.signin_link_text_link = Locators.signIn_link_textlink
-        self.contactUs_link_textlink = Locators.contactUs_link_textlink
-        self.search_textbox_id = Locators.search_textbox_id
-        self.submitSerchBtn_name = Locators.submitSerchBtn_name
-        self.cart_link_cssselectors = Locators.cart_link_cssselectors
-        self.womanCatg_link_textlink = Locators.womanCatg_link_textlink
-        self.dressesCatg_link_xpath = Locators.dressesCatg_link_xpath
-        self.tshirtsCatg_link_xpath = Locators.tshirtsCatg_link_xpath
-        self.prevBtnHomeSlider_btn_class = Locators.prevBtnHomeSlider_btn_class
-        self.nextBtnHomeSlider_btn_class = Locators.nextBtnHomeSlider_btn_class
-        self.popular_link_class = Locators.popular_link_class
-        self.bestsellers_link_class = Locators.bestsellers_link_class
-        self.prodItem1_link_xpath = Locators.prodItem1_link_xpath
-        self.prodItem2_link_xpath = Locators.prodItem2_link_xpath
-        self.prodItemQuickView_link_class = Locators.prodItemQuickView_link_class
-        self.prodItemCloseQuickView_class = Locators.prodItemCloseQuickView_class
-        self.addToCartQuickView_btn_class = Locators.addToCartQuickView_btn_class
-        self.prodDeteilView_link_textlink = Locators.prodDeteilView_link_textlink
-        self.addToCart_btn_selector = Locators.addToCart_btn_selector
-        self.closeAddToCartPopUp_btn_selector = Locators.closeAddToCartPopUp_btn_selector
+        self.signin_link_text_link = HomePageLocators.signIn_link_textlink
+        self.contactUs_link_textlink = HomePageLocators.contactUs_link_textlink
+        self.search_textbox_id = HomePageLocators.search_textbox_id
+        self.submitSerch_Btn_name = HomePageLocators.submitSerch_Btn_name
+        self.cart_link_cssselectors = HomePageLocators.cart_link_cssselectors
+        self.womanCatg_link_textlink = HomePageLocators.womanCatg_link_textlink
+        self.dressesCatg_link_xpath = HomePageLocators.dressesCatg_link_xpath
+        self.tshirtsCatg_link_xpath = HomePageLocators.tshirtsCatg_link_xpath
+        self.prevBtnHomeSlider_btn_class = HomePageLocators.prevBtnHomeSlider_btn_class
+        self.nextBtnHomeSlider_btn_class = HomePageLocators.nextBtnHomeSlider_btn_class
+        self.popular_link_class = HomePageLocators.popular_link_class
+        self.bestsellers_link_class = HomePageLocators.bestsellers_link_class
+        self.prodItem1_link_xpath = HomePageLocators.prodItem1_link_xpath
+        self.prodItem2_link_xpath = HomePageLocators.prodItem2_link_xpath
+        self.prodItemQuickView_link_class = HomePageLocators.prodItemQuickView_link_class
+        self.prodItemCloseQuickView_class = HomePageLocators.prodItemCloseQuickView_class
+        self.addToCartQuickView_btn_class = HomePageLocators.addToCartQuickView_btn_class
+        self.prodDeteilView_link_textlink = HomePageLocators.prodDeteilView_link_textlink
+        self.addToCart_btn_xpath = HomePageLocators.addToCart_btn_xpath
+        self.closeAddToCartPopUp_btn_selector = HomePageLocators.closeAddToCartPopUp_btn_selector
 
     def click_signIn(self):
         self.driver.find_element_by_link_text(self.signin_link_text_link).click()

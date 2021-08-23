@@ -1,18 +1,17 @@
-from selenium import webdriver
-from scripts.Locators.locators import Locators
+from scripts.Locators.cartPage import CartPageLocators
 
 class CartPage():
 
     def __init__(self, driver):
         self.driver = driver
 
-        self.home_link_xpath = Locators.home_link_xpath
-        self.qtyItemPlus_link_selector = Locators.qtyItemPlus_link_selector
-        self.qtyItemMinus_link_xpath = Locators.qtyItemMinus_link_xpath
-        self.removeItem_btn_selector = Locators.removeItem_btn_selector
-        self.continueShop_link_textlink = Locators.continueShop_link_textlink
-        self.proceedToCheckout_link_textlink = Locators.proceedToCheckout_link_textlink
-        self.prodDetView_link_xpath = Locators.prodDetView_link_xpath
+        self.home_link_xpath = CartPageLocators.home_link_xpath
+        self.qtyItemPlus_link_selector = CartPageLocators.qtyItemPlus_link_selector
+        self.qtyItemMinus_link_xpath = CartPageLocators.qtyItemMinus_link_xpath
+        self.removeItem_btn_selector = CartPageLocators.removeItem_btn_selector
+        self.continueShop_link_textlink = CartPageLocators.continueShop_link_textlink
+        self.proceedToCheckout_link_textlink = CartPageLocators.proceedToCheckout_link_textlink
+        self.prodDetView_link_xpath = CartPageLocators.prodDetView_link_xpath
 
     def click_Home(self):
         self.driver.find_element_by_xpath(self.home_link_xpath).click()
