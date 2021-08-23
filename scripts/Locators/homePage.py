@@ -19,4 +19,4 @@ class HomePageLocators():
     addToCartQuickView_btn_class = "exclusive"
     prodDeteilView_link_textlink = "More"
     addToCart_btn_xpath = "//ul[@id='homefeatured']/li[2]/div/div[2]/div[2]/a/span"
-    closeAddToCartPopUp_btn_selector = "span.cross"
+    closeAddToCartPopUp_btn_cssselector = "span.cross"
