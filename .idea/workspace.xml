@@ -7,6 +7,10 @@
     <list default="true" id="d49baaef-bb48-41d5-bf58-9fb3794885ab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Pages/contactUsPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Pages/contactUsPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Pages/createAnAccountPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Pages/createAnAccountPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Pages/homePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Pages/homePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Pages/signInPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Pages/signInPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Pages/signOutPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Pages/signOutPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Tests/mapHomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Tests/mapHomePage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
