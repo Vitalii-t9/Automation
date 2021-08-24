@@ -30,14 +30,11 @@ class MapHomePage(unittest.TestCase):
         home = HomePage(driver)
         contactUs = ContactUs(driver)
         home.click_on_locator(home.contactUs_link_textlink)
+        contactUs.click_on_locator(contactUs.subjectHeading_dropdownmenu_id)
         contactUs.select_by_visibletext(contactUs.subjectHeading_dropdownmenu_id, contactUs.subjectHeading_dropdownmenuitem_visibletext)
-        time.sleep(3)
-        contactUs.enter_text(contactUs.email_textbox_id, "any@gmail.com")
-        time.sleep(2)
-        contactUs.enter_text(contactUs.orderReference_textbox_id, "Any text")
-        time.sleep(2)
-        contactUs.enter_text(contactUs.message_textbox_id, "Any text two")
-        time.sleep(2)
+        time.sleep(5)
+
+
 
     @classmethod
     def tearDownClass(cls):

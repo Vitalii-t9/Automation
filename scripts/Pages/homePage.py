@@ -29,10 +29,6 @@ class HomePage(Click):
         self.closeAddToCartPopUp_btn_cssselector = HomePageLocators.closeAddToCartPopUp_btn_cssselector
 
 
-    def search(self, text_locator, btn_locator, query):
-        self.driver.find_element_by_id(text_locator).clear()
-        self.driver.find_element_by_id(text_locator).send_keys(query)
-        self.driver.find_element_by_name(btn_locator).click()
 
 
 

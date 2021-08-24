@@ -20,5 +20,4 @@ class ContactUs(Click):
         self.send_btn_xpath = ContactUsPageLocators.send_btn_xpath
         self.orderReference_textbox_id = ContactUsPageLocators.orderReference_textbox_id
 
-    def select_item_from_dropdownmenu(self):
-        pass
+
