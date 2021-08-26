@@ -1,7 +1,7 @@
 from scripts.Locators.accountPage import AccountPageLocators
-from scripts.functions import Click
+from scripts.functions import Action
 
-class AccountPage(Click):
+class AccountPage(Action):
 
     def __init__(self, driver):
         self.driver = driver

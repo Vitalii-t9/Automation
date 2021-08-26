@@ -1,7 +1,7 @@
 from scripts.Locators.contactUsPage import ContactUsPageLocators
-from scripts.functions import Click
+from scripts.functions import Action
 
-class ContactUs(Click):
+class ContactUs(Action):
 
     def __init__(self, driver):
 

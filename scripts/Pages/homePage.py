@@ -1,8 +1,8 @@
 from scripts.Locators.homePage import HomePageLocators
-from scripts.functions import Click
+from scripts.functions import Action
 
 
-class HomePage(Click):
+class HomePage(Action):
 
     def __init__(self, driver):
         self.driver = driver

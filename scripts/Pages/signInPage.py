@@ -1,7 +1,8 @@
 from scripts.Locators.signInPage import SignInPageLocators
+from scripts.functions import Action
 
 
-class SignInPage():
+class SignInPage(Action):
 
     def __init__(self, driver):
         self.driver = driver

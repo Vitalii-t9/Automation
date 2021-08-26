@@ -1,7 +1,10 @@
 from scripts.Locators.createAnAccountPage import CreateAnAccountPageLocators
 from selenium.webdriver.support.ui import Select
 from selenium import webdriver
-class CreateAnAccountPage():
+from scripts.functions import Action
+
+
+class CreateAnAccountPage(Action):
 
     def __init__(self, driver):
         self.driver = driver

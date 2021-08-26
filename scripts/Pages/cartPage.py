@@ -1,7 +1,7 @@
 from scripts.Locators.cartPage import CartPageLocators
-from scripts.functions import Click
+from scripts.functions import Action
 
-class CartPage(Click):
+class CartPage(Action):
 
     def __init__(self, driver):
         self.driver = driver

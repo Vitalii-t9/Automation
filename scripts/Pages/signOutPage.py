@@ -1,6 +1,8 @@
 from scripts.Locators.signOutPage import SignOutPageLocators
+from scripts.functions import Action
 
-class SignOutPage():
+
+class SignOutPage(Action):
 
     def __init__(self, driver):
         self.driver = driver
