@@ -1,5 +1,5 @@
 from scripts.Locators.signInPage import SignInPageLocators
-from scripts.functions import Action
+from scripts.Actions import Action
 
 
 class SignInPage(Action):

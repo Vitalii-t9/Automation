@@ -1,5 +1,5 @@
 from scripts.Locators.accountPage import AccountPageLocators
-from scripts.functions import Action
+from scripts.Actions import Action
 
 class AccountPage(Action):
 

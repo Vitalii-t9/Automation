@@ -1,5 +1,5 @@
 from scripts.Locators.contactUsPage import ContactUsPageLocators
-from scripts.functions import Action
+from scripts.Actions import Action
 
 class ContactUs(Action):
 

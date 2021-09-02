@@ -1,5 +1,5 @@
 from scripts.Locators.cartPage import CartPageLocators
-from scripts.functions import Action
+from scripts.Actions import Action
 
 class CartPage(Action):
 

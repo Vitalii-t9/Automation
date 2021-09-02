@@ -1,5 +1,5 @@
 from scripts.Locators.homePage import HomePageLocators
-from scripts.functions import Action
+from scripts.Actions import Action
 
 
 class HomePage(Action):

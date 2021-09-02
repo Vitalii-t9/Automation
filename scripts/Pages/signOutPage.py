@@ -1,5 +1,5 @@
 from scripts.Locators.signOutPage import SignOutPageLocators
-from scripts.functions import Action
+from scripts.Actions import Action
 
 
 class SignOutPage(Action):
