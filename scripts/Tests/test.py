@@ -1,6 +1,3 @@
-import sys
-import os
-
-file_path = os.path.split("../../drivers/chromedriver.exe")[1]
-
-print(file_path)
+m = "chromedriver_ga"
+m = m.split("driver")[0]
+print(m)
