@@ -1,5 +1,0 @@
-2021-09-02 16:59:08.989: - INFO - Select Web driver: <selenium.webdriver.chrome.webdriver.WebDriver (session="65a2df8df6c4d5107c0c8cbb310c9954")>
-2021-09-02 16:59:17.658: - INFO - go to the home page http://automationpractice.com/index.php 
-2021-09-02 16:59:23.772: - INFO - Loading page successful
-2021-09-02 16:59:23.773: - INFO - click on Contact us
-2021-09-02 16:59:26.898: - INFO - success

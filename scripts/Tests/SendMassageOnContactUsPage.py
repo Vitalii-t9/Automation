@@ -26,41 +26,60 @@ scriptPath = os.path.abspath(os.path.dirname(__file__))
 os.chdir(scriptPath)
 
 
-class MapHomePage(unittest.TestCase):
+class SendMessageOnContactsUsPageTest(unittest.TestCase):
 
     global logger
     logger = TestLogging.create_log_file_handler(os.path.join(scriptPath, TestLogging.cleanupLogFileName(fileLogName)),
                                                  logging.INFO)
     @classmethod
     def setUpClass(cls):
-        # os.path.join(__filepath__, "../../driver/webdriver/chromederiver")
         cls.driver = webdriver.Chrome(executable_path=driver_path)
         logger.info(f"Select Web driver: {cls.driver}")
         cls.driver.implicitly_wait(10)
-        # cls.driver.maximize_window()
+        logger.info("implicitly wait 10 second")
+        cls.driver.maximize_window()
+        logger.info("Maximize browser window")
 
-    def test_links_on_hp(self):
+    def test_search_line(self):
         driver = self.driver
+        logger.info(f"Driver is {driver}")
         link = 'http://automationpractice.com/index.php'
+        logger.info(f"Test will start from {link} address")
+
+        # Step 1: go to the home page
         driver.get(link)
         logger.info(f"go to the home page {link} ")
+
+
+        # Step 2: click on Contact Us
         home = HomePage(driver)
-        contactUs = ContactUs(driver)
         home.click_on_locator(home.contactUs_link_textlink)
-        logger.info("Loading page successful")
-        logger.info(f"click on Contact us")
-        contactUs.click_on_locator(contactUs.subjectHeading_dropdownmenu_id)
-        time.sleep(1)
-        contactUs.select_by_visibletext(
-            contactUs.subjectHeading_dropdownmenu_id, contactUs.subjectHeading_dropdownmenuitem_visibletext)
-        time.sleep(2)
-        logger.info("success")
+        logger.info("Click on the Contact Us")
+
+        # Step 3: in the Contact Us Page enter all data and send message
+        contact = ContactUs(driver)
+        contact.select_by_visibletext(contact.subjectHeading_dropdownmenu_id, contact.subjectHeading_dropdownmenuitem_visibletext)
+        logger.info("Select item from Subject Heading")
+        contact.enter_text(contact.email_textbox_id, "12test@goo.com")
+        logger.info("Enter test email")
+        time.sleep(3)
+        contact.enter_text(contact.orderReference_textbox_id, "Test text")
+        logger.info("Enter order reference")
+        contact.enter_text(contact.message_textbox_id, "Here is some test text")
+        contact.click_on_locator(contact.send_btn_xpath)
+        logger.info("click on the Send btn")
+        time.sleep(5)
+
+
+
 
     @classmethod
     def tearDownClass(cls):
+        logger.info("Connection interrupt")
         cls.driver.close()
+        logger.info("Close the browsers window")
         cls.driver.quit()
-        print("Test Passed")
+        logger.info("Test Passed")
 
 
 if __name__ == "__main__":
