@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d49baaef-bb48-41d5-bf58-9fb3794885ab" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/webdrivers_for_win/chromedriver_ga/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Locators/cartPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Locators/cartPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Locators/contactUsPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Locators/contactUsPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Locators/homePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Locators/homePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Locators/locators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Locators/signInPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Locators/signInPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Locators/signOutPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Locators/signOutPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Pages/accountPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Pages/accountPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Pages/cartPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Pages/cartPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Pages/contactUsPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Pages/contactUsPage.py" afterDir="false" />
@@ -14,10 +21,7 @@
       <change beforePath="$PROJECT_DIR$/scripts/Pages/homePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Pages/homePage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Pages/signInPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Pages/signInPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Pages/signOutPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Pages/signOutPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Tests/mapHomePage.log" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Tests/mapHomePage.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Tests/mapHomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Tests/mapHomePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Tests/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Tests/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +36,10 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/scripts/Tests" />
   </component>
   <component name="ProjectId" id="1x7dBNRl5jq1E8jSC9n829O69xC" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -57,28 +61,7 @@
       <recent name="C:\Users\vitalii.titov\PycharmProjects\automationtests\drivers\webdrivers_for_win\chromedriver_ga" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in mapHomePage.py">
-    <configuration name="Utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="automationtests" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/Utils.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test">
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="automationtests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,6 +75,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/Tests/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="automationtests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/Tests/test_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.test_1" />
         <item itemvalue="Python tests.Python tests in mapHomePage.py" />
         <item itemvalue="Python tests.Python tests for mapHomePage.MapHomePage" />
         <item itemvalue="Python tests.Python tests for mapHomePage.MapHomePage.test_links_on_hp" />
-        <item itemvalue="Python.Utils" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -180,14 +184,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scripts/Tests/mapHomePage.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/scripts/Utils.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scripts/Utils.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/scripts/Tests/test_1.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/Tests/test.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,3 @@
-from scripts.Locators.createAnAccountPage import CreateAnAccountPageLocators
-from selenium.webdriver.support.ui import Select
-from selenium import webdriver
 from scripts.Actions import Action
 
 
@@ -9,34 +6,38 @@ class CreateAnAccountPage(Action):
     def __init__(self, driver):
         self.driver = driver
 
-        self.genderMr_radiobtn_id = CreateAnAccountPageLocators.genderMr_radiobtn_id
-        self.genderMrs_radiobtn_id = CreateAnAccountPageLocators.genderMrs_radiobtn_id
-        self.userFirstName_textbox_id = CreateAnAccountPageLocators.userFirstName_textbox_id
-        self.userSecondName_textbox_id = CreateAnAccountPageLocators.userSecondName_textbox_id
-        self.userEmail_textbox_id = CreateAnAccountPageLocators.userEmail_textbox_id
-        self.userPasswd_textbox_id = CreateAnAccountPageLocators.userPasswd_textbox_id
-        self.dayOfBirth_dropdownmenu_id = CreateAnAccountPageLocators.dayOfBirth_dropdownmenu_id
-        self.dayOfBirth_menuitem_visibletext = CreateAnAccountPageLocators.dayOfBirth_menuitem_visibletext
-        self.monthOfBirth_dropdownmenu_id = CreateAnAccountPageLocators.monthOfBirth_dropdownmenu_id
-        self.monthOfBirth_menuitem_visibletext = CreateAnAccountPageLocators.monthOfBirth_menuitem_visibletext
-        self.yearOfBirth_dropdownmenu_id = CreateAnAccountPageLocators.yearOfBirth_dropdownmenu_id
-        self.yearOfBirth_menuitem_visibletext = CreateAnAccountPageLocators.yearOfBirth_menuitem_visibletext
-        self.receiveNewsletter_checkbox_id = CreateAnAccountPageLocators.receiveNewsletter_checkbox_id
-        self.receiveSpecialoffers_checkbox_id = CreateAnAccountPageLocators.receiveSpecialoffers_checkbox_id
-        self.firstNameDelivery_textbox_id = CreateAnAccountPageLocators.firstNameDelivery_textbox_id
-        self.lastNameDelivery_textbox_id = CreateAnAccountPageLocators.lastNameDelivery_textbox_id
-        self.companyName_textbox_id = CreateAnAccountPageLocators.companyName_textbox_id
-        self.address_textbox_id = CreateAnAccountPageLocators.address_textbox_id
-        self.addressLine2_textbox_id = CreateAnAccountPageLocators.addressLine2_textbox_id
-        self.city_textbox_id = CreateAnAccountPageLocators.city_textbox_id
-        self.state_dropdownmenu_id = CreateAnAccountPageLocators.state_dropdownmenu_id
-        self.state_menuitem_visibletext = CreateAnAccountPageLocators.state_menuitem_visibletext
-        self.postCode_textbox_id = CreateAnAccountPageLocators.postCode_textbox_id
-        self.contry_dropdownmenu_id = CreateAnAccountPageLocators.contry_dropdownmenu_id
-        self.additionalInformation_textbox_id = CreateAnAccountPageLocators.additionalInformation_textbox_id
-        self.mobilePhone_textbox_id = CreateAnAccountPageLocators.mobilePhone_textbox_id
-        self.aliasForAddress_textbox_id = CreateAnAccountPageLocators.aliasForAddress_textbox_id
-        self.submitAccount_btn_id = CreateAnAccountPageLocators.submitAccount_btn_id
+        # user pesonal information
+        self.genderMr_radiobtn_id = "id_gender1"
+        self.genderMrs_radiobtn_id = "id_gender2"
+        self.userFirstName_textbox_id = "customer_firstname"
+        self.userSecondName_textbox_id = "customer_lastname"
+        self.userEmail_textbox_id = "email"
+        self.userPasswd_textbox_id = "passwd"
+        self.dayOfBirth_dropdownmenu_id = "days"
+        self.dayOfBirth_menuitem_visibletext = "regexp:12\\s+"
+        self.monthOfBirth_dropdownmenu_id = "months"
+        self.monthOfBirth_menuitem_visibletext = "regexp:May\\s"
+        self.yearOfBirth_dropdownmenu_id = "years"
+        self.yearOfBirth_menuitem_visibletext = "regexp:2015\\s+"
+        self.receiveNewsletter_checkbox_id = "newsletter"
+        self.receiveSpecialoffers_checkbox_id = "optin"
+        # user address
+        self.firstNameDelivery_textbox_id = "firstname"
+        self.lastNameDelivery_textbox_id = "lastname"
+        self.companyName_textbox_id = "company"
+        self.address_textbox_id = "address1"
+        self.addressLine2_textbox_id = "address2"
+        self.city_textbox_id = "city"
+        self.state_dropdownmenu_id = "id_state"
+        self.state_menuitem_visibletext = "Idaho"
+        self.postCode_textbox_id = "postcode"
+        self.contry_dropdownmenu_id = "id_country"
+        self.additionalInformation_textbox_id = "other"
+        self.mobilePhone_textbox_id = "phone_mobile"
+        self.aliasForAddress_textbox_id = "alias"
+        self.submitAccount_btn_id = "submitAccount"
+        self.locatorTypes = ["id", "xpath", "link text", "partial link text", "name", "tag name", "class name", "css selector"]
+
 
 
 

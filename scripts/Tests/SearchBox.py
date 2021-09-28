@@ -4,6 +4,8 @@ import sys
 import os
 from selenium import webdriver
 import logging
+
+from selenium.webdriver.common.by import By
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
 from scripts.Pages.homePage import HomePage
 from scripts.Pages.cartPage import CartPage
@@ -45,20 +47,18 @@ class SearchBoxTest(unittest.TestCase):
         logger.info(f"Driver is {driver}")
         link = 'http://automationpractice.com/index.php'
         logger.info(f"Test will start from {link} address")
-
         # Step 1: go to the home page
         driver.get(link)
         logger.info(f"go to the home page {link} ")
-        home = HomePage(driver)
-        query = "woman close"
-
+        
         # Step 2: enter some query to the search box
-        logger.info(f"Enter -{query}- to the search box")
-        home.enter_text(home.search_textbox_id, query)
+        home = HomePage(driver)
+        query = "dress"
+        home.enter_text(logger, home.search_textbox_id, query)
+        
 
         # Step 3: click on the search button
-        logger.info("Click to the search button")
-        home.click_on_locator(home.submitSerch_Btn_name)
+        home.click_on_locator(logger, home.submitSerch_Btn_name)
         time.sleep(3)
 
 

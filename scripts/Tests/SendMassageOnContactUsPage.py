@@ -53,7 +53,7 @@ class SendMessageOnContactsUsPageTest(unittest.TestCase):
 
         # Step 2: click on Contact Us
         home = HomePage(driver)
-        home.click_on_locator(home.contactUs_link_textlink)
+        home.click_on_locator(home.contactUs_link_linktext)
         logger.info("Click on the Contact Us")
 
         # Step 3: in the Contact Us Page enter all data and send message

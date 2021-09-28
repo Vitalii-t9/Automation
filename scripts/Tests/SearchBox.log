@@ -1,0 +1,12 @@
+2021-09-25 16:59:27.681: - INFO - Select Web driver: <selenium.webdriver.chrome.webdriver.WebDriver (session="63f3a10f23e795ad46006cbcf115ed70")>
+2021-09-25 16:59:27.681: - INFO - implicitly wait 10 second
+2021-09-25 16:59:27.795: - INFO - Maximize browser window
+2021-09-25 16:59:27.795: - INFO - Driver is <selenium.webdriver.chrome.webdriver.WebDriver (session="63f3a10f23e795ad46006cbcf115ed70")>
+2021-09-25 16:59:27.795: - INFO - Test will start from http://automationpractice.com/index.php address
+2021-09-25 16:59:31.798: - INFO - go to the home page http://automationpractice.com/index.php 
+2021-09-25 16:59:31.830: - INFO -  text box with locator type 'id' locator 'search_query_top' was cleared successful
+2021-09-25 16:59:31.862: - INFO - text was entered successful in the text box with locator type 'id' locator 'search_query_top'
+2021-09-25 16:59:31.918: - INFO - locator type 'name' locator 'submit_search' was found and clicked successful
+2021-09-25 16:59:34.921: - INFO - Connection interrupt
+2021-09-25 16:59:34.962: - INFO - Close the browsers window
+2021-09-25 16:59:37.140: - INFO - Test Passed

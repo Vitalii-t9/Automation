@@ -1,4 +1,3 @@
-from scripts.Locators.cartPage import CartPageLocators
 from scripts.Actions import Action
 
 class CartPage(Action):
@@ -6,11 +5,13 @@ class CartPage(Action):
     def __init__(self, driver):
         self.driver = driver
 
-        self.home_link_xpath = CartPageLocators.home_link_xpath
-        self.qtyItemPlus_link_selector = CartPageLocators.qtyItemPlus_link_selector
-        self.qtyItemMinus_link_xpath = CartPageLocators.qtyItemMinus_link_xpath
-        self.removeItem_btn_selector = CartPageLocators.removeItem_btn_selector
-        self.continueShop_link_textlink = CartPageLocators.continueShop_link_textlink
-        self.proceedToCheckout_link_textlink = CartPageLocators.proceedToCheckout_link_textlink
-        self.prodDetView_link_xpath = CartPageLocators.prodDetView_link_xpath
+        self.home_link_xpath = "//div[@id='columns']/div/a/i"
+        self.qtyItemPlus_link_selector = "i.icon-plus"
+        self.qtyItemMinus_link_xpath = "//td[5]/div/a/span"
+        self.removeItem_btn_selector = "i.icon-trash"
+        self.continueShop_link_linktext = "Continue shopping"
+        self.proceedToCheckout_link_linktext = "Proceed to checkout"
+        self.prodDetView_link_xpath = "//td/a/img"
+        self.locatorTypes = ["id", "xpath", "link text", "partial link text", "name", "tag name", "class name", "css selector"]
+
 

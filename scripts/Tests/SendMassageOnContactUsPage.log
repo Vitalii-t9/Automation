@@ -1,0 +1,14 @@
+2021-09-25 13:34:16.146: - INFO - Select Web driver: <selenium.webdriver.chrome.webdriver.WebDriver (session="15099acfc7c400d36c8fad4167456421")>
+2021-09-25 13:34:16.146: - INFO - implicitly wait 10 second
+2021-09-25 13:34:16.274: - INFO - Maximize browser window
+2021-09-25 13:34:16.274: - INFO - Driver is <selenium.webdriver.chrome.webdriver.WebDriver (session="15099acfc7c400d36c8fad4167456421")>
+2021-09-25 13:34:16.274: - INFO - Test will start from http://automationpractice.com/index.php address
+2021-09-25 13:34:19.940: - INFO - go to the home page http://automationpractice.com/index.php 
+2021-09-25 13:34:21.176: - INFO - Click on the Contact Us
+2021-09-25 13:34:21.264: - INFO - Select item from Subject Heading
+2021-09-25 13:34:21.328: - INFO - Enter test email
+2021-09-25 13:34:24.332: - INFO - Enter order reference
+2021-09-25 13:34:25.951: - INFO - click on the Send btn
+2021-09-25 13:34:30.955: - INFO - Connection interrupt
+2021-09-25 13:34:31.005: - INFO - Close the browsers window
+2021-09-25 13:34:33.199: - INFO - Test Passed
